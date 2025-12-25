@@ -48,8 +48,8 @@
           <span class="brand-text">Ph.D. Dropout</span>
         </a>
       <nav class="nav">
-        <a href="physics.html">Physics</a>
-        <a class="active" href="maths.html">Maths</a>
+        <a class="active" href="physics.html">Physics</a>
+        <a href="maths.html">Maths</a>
         <button id="theme-toggle" class="theme-toggle" aria-label="Toggle color theme" title="Toggle light/dark">
             <img id="theme-icon" src="toggles/dark_mode.png" alt="Switch to dark mode">
         </button>
@@ -62,12 +62,12 @@
     <nav class="breadcrumb">
       <a href="index.html">Home</a><span> / </span>
       <a href="physics.html">Physics</a><span> / </span>
-      <span>Motion in One Dimension (Algebra Based)</span>
+      <span>Motion in One Dimension</span>
     </nav>
 
     <!-- Page header -->
     <section class="page-header">
-      <h1>Motion in One Dimension (Algebra Based)</h1>
+      <h1>Motion in One Dimension</h1>
       <!--<h2>Defining Sine, Cosine, and Tangent.</h2>-->
     </section>
 
@@ -78,6 +78,7 @@
         <li><a href="#chapter 1">Distance & Displacement</a></li>
         <li><a href="#chapter 2">Speed & Velocity</a></li>
         <li><a href="#chapter 3">Acceleration</a></li>
+        <li><a href="#chapter 4">Kinematics Equations: Derivation</a></li>
       </ol>
     </section>
 
@@ -185,6 +186,7 @@
 
           Because displacement is a vector quantity, velocity is also a vector quantity. Therefore, at any given instant, the velocity of an object represents both its speed and the direction of its motion.
         </p>
+
         <h2>S.I. unit of Speed & Velocity</h2>
         <p class="lede">
           The S.I. unit for time is the second ($s$). And from chapter 1, we know that the S.I. unit for both distance and displacement is the meter ($m$). To obtain the S.I. unit for speed and velocity, we can substitue these units into the above definitions. Therefore, the S.I. unit for speed is,
@@ -193,12 +195,116 @@
 
           Similarly, the S.I. unit for velocity is $m/s$.
         </p>
+        <h2>Average and Instantaneous Velocity</h2>
+        <p class="lede">
+          The velocity of an object can vary with time. To describe its motion more precisely, we define two related quantities: <b>average velocity</b> and <b>instantaneous velocity</b>.
+        </p>
+
+        <p class="lede">
+          <b>Average Velocity:</b> It is the net displacement divided by the total time taken for that displacement. If a particle moves from an initial position $x_i$ to a final position $x_f$ in a time interval $\Delta t = t_f - t_i$, then
+          $$v_{avg} = \frac{x_f - x_i}{t_f - t_i} = \frac{\Delta x}{\Delta t}$$
+          Average velocity gives an overall rate of motion during the interval, but it does not describe the motion at any specific instant.
+        </p>
+
+        <p class="lede">
+          <b>Instantaneous Velocity:</b> It represents the velocity of an object at a particular instant of time. Mathematically, it is obtained as the limit of the average velocity as the time interval approaches zero:
+          $$v = \lim_{\Delta t \to 0} \frac{\Delta x}{\Delta t} = \frac{dx}{dt}$$
+          Instantaneous velocity provides the most accurate description of how fast and in which direction an object is moving at a given moment.
+        </p>
       </div>
     </section>
 
     <section id="chapter 3" class="section-note">
       <div class="trig-copy">
         <h2>3. Acceleration</h2>
+        <p class="lede">
+          In the previous chapter, we learned that velocity describes how fast and in what direction an object is moving. However, in many cases, the velocity of an object changes over time — either in magnitude, in direction, or both. The rate at which this change occurs is known as <b>acceleration</b>.
+        </p>
+
+        <p class="lede">
+          Mathematically, acceleration $a$ is defined as the rate of change of velocity with respect to time:
+          $$a = \frac{\Delta v}{\Delta t} = \frac{v_f - v_i}{t_f - t_i}$$
+          where $v_i$ and $v_f$ are the initial and final velocities, respectively, and $\Delta t = t_f - t_i$ is the time interval during which the change occurs.
+        </p>
+
+        <p class="lede">
+          Acceleration is a <b>vector quantity</b>. It has both magnitude and direction. If velocity increases with time, the acceleration is positive (often called <b>acceleration</b> in common terms). If velocity decreases with time, the acceleration is negative and is commonly referred to as <b>deceleration</b>.
+        </p>
+
+        <h2>S.I. unit of Acceleration</h2>
+        <p class="lede">
+          From the definition above, acceleration is velocity divided by time. Since the S.I. unit of velocity is $m/s$ and that of time is $s$, the S.I. unit of acceleration is:
+          $$[a] = \frac{[v]}{[t]} = \frac{m/s}{s} = m/s^2$$
+        </p>
+
+        <h2>Average and Instantaneous Acceleration</h2>
+        <p class="lede">
+          <b>Average acceleration:</b> The total change in velocity divided by the total time taken.
+          $$a_{avg} = \frac{v_f - v_i}{t_f - t_i}$$
+          <b>Instantaneous acceleration:</b> The acceleration of an object at a particular instant of time. Mathematically, it is given by the derivative of velocity with respect to time:
+          $$a = \frac{dv}{dt}$$
+        </p>
+
+        <h2>Examples</h2>
+
+        <p class="lede">
+          <b>Example 1:</b> A car increases its velocity from $10\,m/s$ to $25\,m/s$ in $5\,s$.
+          <ul class="lede">
+            <li>Change in velocity, $\Delta v = 25 - 10 = 15\,m/s$</li>
+            <li>Time interval, $\Delta t = 5\,s$</li>
+            <li>Acceleration, $a = \frac{\Delta v}{\Delta t} = \frac{15}{5} = 3\,m/s^2$</li>
+          </ul>
+        </p>
+
+        <p class="lede">
+          <b>Example 2:</b> A car moving at $20\,m/s$ slows down uniformly to $5\,m/s$ in $3\,s$.
+          <ul class="lede">
+            <li>Change in velocity, $\Delta v = 5 - 20 = -15\,m/s$</li>
+            <li>Acceleration, $a = \frac{-15}{3} = -5\,m/s^2$</li>
+          </ul>
+        </p>
+        <p class="lede">
+          The negative sign indicates that the acceleration is in the opposite direction to the motion (deceleration).
+        </p>
+
+        <p class="lede">
+          <b>Example 3:</b> An object moves with a constant velocity of $10\,m/s$ for $8\,s$.
+          <ul class="lede">
+            <li>Change in velocity, $\Delta v = 10 - 10 = 0$</li>
+            <li>Acceleration, $a = 0$</li>
+          </ul>
+        </p>
+        <p class="lede">
+          The object experiences zero acceleration since its velocity does not change.
+        </p>
+
+        <p class="lede">
+          Therefore, acceleration describes how the velocity of an object changes with time. When velocity changes uniformly, the acceleration is constant; when velocity changes irregularly, the acceleration is non-uniform.
+        </p>
+      </div>
+    </section>
+
+    <section id="chapter 4" class="section-note">
+      <div class="trig-copy">
+        <h2>4. Kinematics Equations: Derivation</h2>
+
+        <p class="lede">
+        In the previous chapters, we learned about displacement, velocity, and acceleration, and how they describe the motion of an object in one dimension. When the acceleration of an object remains constant, the motion is said to be <b>uniformly accelerated motion</b>. Examples include the free fall of an object near the Earth's surface or a car increasing its speed at a steady rate.
+      </p>
+
+      <p class="lede">
+        For such motion, there exist simple mathematical relationships that connect the key quantities of motion $-$ displacement ($x$), initial velocity ($u$), final velocity ($v$), acceleration ($a$), and time ($t$). These relationships are known as the <b>kinematic equations of motion</b>.
+      </p>
+
+      <p class="lede">
+        In this chapter, we shall derive these equations using two different approaches:
+        <ul class="lede">
+          <li><b>Algebraic approach</b>: based on the definitions of velocity and acceleration, and their interrelations.</li>
+          <li><b>Calculus approach</b>: using the differential relationships between displacement, velocity, and acceleration.</li>
+        </ul>
+      </p>
+      
+      <h2>Deriving $x(t) = x_0 + vt$</h2>
       </div>
     </section>
   </main>
